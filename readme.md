@@ -1,5 +1,8 @@
 # Rock, Paper and Scissors
 
+
+![Alt text](img/app.png?raw=true "App")
+
 Open the file
 
 ```
