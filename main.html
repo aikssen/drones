@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="drones">
+  <head>
+  	<title>Rock, Paper and Scissors</title>
+  	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Special+Elite" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="css/hover-min.css">
+  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+    <div>
+    	<h1>Rock, Paper and Scissors</h1>
+      <hr class="style-eight">
+      <div ng-controller="GameController as game">
+      	<div ng-hide="game.winner">
+      		<p>[Round {{game.round}}] - [Player {{game.player}}]</p>
+      	</div>
+	      <div ng-show="game.winner">
+	      	<h1>We have a WINNER!!</h1>
+	      	<h2>[Player {{game.winner}}] is the New Emperor!</h2>
+	      </div>
+	      <div ng-hide="game.winner">
+		      <p class="sub">Choose a movement</p>
+	      	<ul class="moves-container">
+	      		<li class="move-item" ng-repeat="move in game.moves">
+		      		<div 
+		      			class="hvr-grow move"
+		      			ng-click="game.move(game.round, game.player, move.name, move.kills)" 
+		      			ng-class="{ active: game.isSelected(move.name) }"
+		      			title="{{ move.name }}"
+		      		>
+		      			<img ng-src="img/{{ move.name }}.svg">
+		      		</div>
+		      	</li>
+		      </ul>
+		    </div>
+	      <div class="results">
+	      	<p class="score-tittle">SCORE</p>
+	      	<table>
+	      		<th>
+	      			<tr><td>Round</td><td>Winner</td></tr>
+	      		</th>
+	      		<tbody>
+	      			<tr ng-repeat="row in game.roundResults">
+						    <td>{{ row.round }}</td>
+						    <td>[{{ row.label }}]</td>
+						  </tr>
+	      		</tbody>
+	      	</table>
+	     	</div>
+	     	<div class="play-again" ng-show="game.winner" ng-click="game.reload()">
+	     		Play Again
+	     	</div>
+	    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.2/lodash.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

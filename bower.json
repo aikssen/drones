@@ -1,0 +1,17 @@
+{
+  "name": "drones",
+  "description": "An angular demo application",
+  "main": "index.js",
+  "authors": [
+    "Ever Cifuentes"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

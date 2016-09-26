@@ -1,0 +1,11 @@
+{
+  "name": "drones",
+  "version": "1.0.0",
+  "description": "An angular demo application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ever Cifuentes",
+  "license": "ISC"
+}

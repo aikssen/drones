@@ -1,0 +1,94 @@
+.text {
+	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Special Elite', cursive;
+}
+hr.style-eight {
+  padding: 0;
+  border: none;
+  border-top: medium double #99afb3;
+  color: #99afb3;
+  text-align: center;
+}
+hr.style-eight:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: #272e2f;
+}
+body{
+	background: #272e2f;
+	text-align: center;
+}
+h1{
+	font-family: 'Cabin Sketch', cursive;
+	color: #99afb3;
+	font-size: 60px;
+}
+h2{
+	font-family: 'Special Elite', cursive;
+	color: #99afb3;
+	font-size: 40px;
+}
+p{
+	font-family: 'Special Elite', cursive;
+	color: #99afb3;
+	font-size: 30px;
+}
+p.sub{
+	font-size: 20px;
+}
+ul{
+	padding: 40px 0;
+	width: 100%;
+	border-top: 3px solid #99afb3;
+	border-bottom: 3px solid #99afb3;
+  list-style-type:none;
+  white-space:nowrap;
+  overflow-x:auto;
+  background: #323f44;
+}
+
+li{
+	margin: 0 40px;
+  display:inline;
+}
+.move{
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	border: 3px dashed #99afb3;
+}
+.move:hover{
+	cursor: pointer;
+}
+.active{
+	background: #347688;
+}
+.results{
+	width: 200px;
+	margin: 0 auto;
+	font-family: 'Cabin Sketch', cursive;
+	color: #99afb3;
+	font-size: 20px;
+}
+.score-tittle{
+	position: absolute;
+	margin-left: -125px;
+}
+.play-again{
+	font-family: 'Special Elite', cursive;
+	color: #99afb3;
+	font-size: 30px;
+	width: 200px;
+	padding: 20px;
+	border: 2px solid #99afb3;
+	border-radius: 20px;
+	margin: 40px auto 0 auto;
+	cursor: pointer;
+}
+.play-again:hover{
+	background: #347688;
+}
